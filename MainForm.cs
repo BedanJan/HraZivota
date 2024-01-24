@@ -7,10 +7,6 @@ namespace HraZivota
 
         public MainForm()
         {
-            this.BackColor = Color.White;
-            this.SetStyle(ControlStyles.DoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
-            this.UpdateStyles();
-            this.Visible = true;
             //vytvoøení øešièe v novém vláknì
             Thread threadOfSolver = new Thread(() => Solver.Solve(this)); 
             threadOfSolver.Start();

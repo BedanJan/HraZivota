@@ -45,7 +45,10 @@ namespace HraZivota
             //// 
             //// Form1
             //// 
-            
+            this.BackColor = Color.White;
+            this.SetStyle(ControlStyles.DoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
+            this.UpdateStyles();
+            this.Visible = true;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(Parameters.meshWidth*2+45, Parameters.meshHeight*2+6);
