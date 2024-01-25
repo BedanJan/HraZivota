@@ -39,7 +39,7 @@ namespace HraZivota
             ClientSize = new Size(Parameters.meshWidth*2, Parameters.meshHeight*2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Hra života - rabbits";
+            Text = "Game of life - Bunnies";
             MaximizeBox = false;
             MinimizeBox = false;
             ResumeLayout(false);
