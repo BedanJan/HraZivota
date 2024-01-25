@@ -48,7 +48,7 @@ namespace HraZivota
                 }
             }
             //nastavení počátečních buněk, které jsou naživu
-            Parameters.SetStartLayout();
+            Parameters.SetStartPattern();
         }
     }
 }

@@ -36,10 +36,12 @@ namespace HraZivota
             this.Visible = true;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(Parameters.meshWidth*2+45, Parameters.meshHeight*2+6);
+            ClientSize = new Size(Parameters.meshWidth*2, Parameters.meshHeight*2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hra života - rabbits";
+            MaximizeBox = false;
+            MinimizeBox = false;
             ResumeLayout(false);
         }
 

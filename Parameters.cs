@@ -19,27 +19,25 @@ namespace HraZivota
         /// <summary>
         /// Počet kroků/generací
         /// </summary>
-        public static int numberOfSteps = 4000;
+        public static int numberOfSteps = 17465;
 
         /// <summary>
         /// Metoda, která přiřadí buňkám vlastnost "naživu"
         /// </summary>
-        public static void SetStartLayout()
+        public static void SetStartPattern()
         {
-            //Model.ArrayOfCells[meshWidth / 2, meshHeight / 2].IsAlive = true;
-            //Model.ArrayOfCells[meshWidth / 2 + 1, meshHeight / 2 + 1].IsAlive = true;
-            //Model.ArrayOfCells[meshWidth / 2 - 1, meshHeight / 2 + 2].IsAlive = true;
-            //Model.ArrayOfCells[meshWidth / 2, meshHeight / 2 + 2].IsAlive = true;
-            //Model.ArrayOfCells[meshWidth / 2 + 1, meshHeight / 2 + 2].IsAlive = true;
-            //
-            Model.ArrayOfCells[200, 200].IsAlive = true;
-            Model.ArrayOfCells[198, 201].IsAlive = true;
-            Model.ArrayOfCells[199, 201].IsAlive = true;
-            Model.ArrayOfCells[200, 202].IsAlive = true;
-            Model.ArrayOfCells[199, 202].IsAlive = true;
-            Model.ArrayOfCells[202, 202].IsAlive = true;
-            Model.ArrayOfCells[203, 202].IsAlive = true;
-            Model.ArrayOfCells[204, 202].IsAlive = true;
+            //pattern Bunnies 11
+            Model.ArrayOfCells[meshWidth / 2, meshHeight / 2].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 - 2, meshHeight / 2 + 1].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 - 1, meshHeight / 2 + 1].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 + 1, meshHeight / 2 + 1].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 + 1, meshHeight / 2 + 2].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 - 1, meshHeight / 2 + 3].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 + 1, meshHeight / 2 + 3].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 - 2, meshHeight / 2 + 4].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 - 1, meshHeight / 2 + 5].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2, meshHeight / 2 + 5].IsAlive = true;
+            Model.ArrayOfCells[meshWidth / 2 + 1, meshHeight / 2 + 5].IsAlive = true;
         }
     }
 }
